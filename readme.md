@@ -41,6 +41,11 @@
 ## E para que seja dado o gatilho para esta alteração, precisamos aterar o arquivo package.json na parte de scripts
     "start": "nodemon index.js"
 
+## Antes de subir o docker-compose é necessário eiminar arquivos desnecessários como o node-modules, para isso criamos o arquivo .dockerignore
+    - touch .dockerignore
+    ** Incluir no arquivo a seguinte linha:
+        node-modules
+
 ## Para rodar o docker-compose é necessário utilizar o comando
     docker-compose up
 
